@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewTitle"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/textSizeBig"/>
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:text="@string/textViewStatus"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/textViewTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewStatus"
+        android:text="@string/textViewTask"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/textSizeBig"/>
+
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTask"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/editTextHint"
+        android:textSize="@dimen/textSizeBig"
+        android:inputType="numberDecimal"
+        android:gravity="end"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextResult"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnResult"
+        android:textColor="@color/black"
+        app:backgroundTint="#DDD0D0"
+        android:onClick="onClick"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnNewTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnResult"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnNewTask"
+        android:textColor="@color/black"
+        app:backgroundTint="#DDD0D0"
+        android:onClick="onClick"
+        tools:ignore="UsingOnClickInXml" />
+
+</RelativeLayout>

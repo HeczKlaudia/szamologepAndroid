@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Szamologep</string>
+    <string name="textViewTitle">Számológép</string>
+    <string name="textViewStatus">Helyes!</string>
+    <string name="textViewStatusRossz">Rossz!</string>
+    <string name="textViewTask">0 + 0 =</string>
+    <string name="editTextHint">eredmény</string>
+    <string name="btnResult">OK</string>
+    <string name="btnNewTask">Új feladat</string>
+</resources>
